@@ -85,6 +85,8 @@ document.querySelector("h1").textContent = "Nuevo título";
 
 
 document.getElementById("miElemento");
+
+
 document.getElementsByClassName("miClase");
 document.querySelector(".miClase");
 
