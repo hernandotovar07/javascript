@@ -94,3 +94,7 @@ function cambiar() {
     document.getElementById("miElemento").innerHTML = "no pensando"
     document.querySelector("h1").textContent = "ya no pensamos"
 }
+
+// Recuperar un dato
+let nombre = localStorage.getItem ('nombre');
+console.log(nombre); // Muestra "Juan"

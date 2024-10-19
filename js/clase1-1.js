@@ -1,12 +1,40 @@
-function sumar (a, b){
-    return a + b;
-}
-let resultado = sumar(5, 3);
-console.log(resultado); //imprime 8
+let entrada = document.getElementById("resultado");
+let numero1;
+let mumero2;
+let operacion="";
 
-function sumar() {
-    const numero1 = document.getElementById ("numero1");
-    let valor1 = numero1.value
-    const numero2 = numero2.value
-    let valor2
+function operaciones(o){
+    numero1=entrada.value
+    entrada.value = ""
+    operacion = o
+
 }
+
+function n(n){
+    if (entrada.value!=""){
+        entrada.value +=n
+    }else{
+        entrada.value=n
+    }
+}
+
+function resultado(){
+    numero2 = entrada.value
+    if(operacion == "sumar"){
+        entrada.value = parseFloat(numero1)+parseFloat(numero2)
+    }else if(operacion == "restar"){
+        entrada.value = parseFloat(numero1)-parseFloat(numero2)
+
+    }else if(operacion=="multiplicar"){
+        entrada.value = parseFloat(numero1)*parseFloat(numero2)
+    }else{
+        entrada.value = parseFloat(numero1)/parseFloat(numero2)
+    }
+
+}
+
+function borrar(){
+    entrada.value = 0
+}
+
+

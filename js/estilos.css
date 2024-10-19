@@ -1,0 +1,13 @@
+#calculadora{
+    width: 250px;
+}
+
+#contenedor #resultado{
+    width: 100%;
+}
+
+#teclas{
+    width: 100%;
+    display: grid;
+   grid-template-columns: auto auto auto;
+}
